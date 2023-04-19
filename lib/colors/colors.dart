@@ -11,6 +11,12 @@ class AppColor {
   static Color homePageContainerTxtSm = const Color(0xFFf4f5fd);
   static Color homePageContainerTxtBig = const Color(0xFFffffff);
   static Color homePagePlanColor = const Color(0xFFa2a2b1);
-  static Color homePageTopIconColor = const Color(0xFFb7bce8);
-  static Color homePageTitleColor = const Color(0xFFfefeff);
+  static Color secondPageTopIconColor= const Color(0xFFb7bce8);
+  static Color secondPageTitleColor= const Color(0xFFfefeff);
+  static Color secondPageContainerGradient1stColor= const Color(0xFF5564d8);
+  static Color secondPageContainerGradient2ndColor= const Color(0xFF6279dc);
+  static Color secondPageIconColor= const Color(0xFFfafafe);
+  static Color loopColor = const Color(0xFF6d8dea);
+  static Color setsColor = const Color(0xFF9999a9);
+  static Color circuitsColor = const Color(0xFF2f2f51);
 }

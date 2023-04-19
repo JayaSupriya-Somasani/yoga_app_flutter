@@ -1,7 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
+import 'package:yoga_app_flutter/video_info.dart';
 import 'colors/colors.dart';
 
 class HomePage extends StatefulWidget {
@@ -77,18 +78,23 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.w700),
                 ),
                 Expanded(child: Container()),
-                Text(
-                  "Details",
-                  style:
-                  TextStyle(color: AppColor.homePageDetail, fontSize: 16),
-                ),
+                 Text(
+                    "Details",
+                    style:
+                    TextStyle(color: AppColor.homePageDetail, fontSize: 16),
+                  ),
                 const SizedBox(
                   width: 4,
                 ),
-                const Icon(
-                  Icons.arrow_forward,
-                  size: 20,
-                )
+                 InkWell(
+                   onTap: (){
+                     Get.to(()=>VideoInfo());
+                   },
+                   child: const Icon(
+                    Icons.arrow_forward,
+                    size: 20,
+                ),
+                 )
               ],
             ),
             const SizedBox(
